@@ -1,0 +1,63 @@
+/* src/components/App/App.css */
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+.app__content {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos para Header y Footer que mantienen el ancho completo pero centran su contenido */
+.header, .footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f5;
+}
+
+.header__content, .footer__content {
+  width: 90%; /* Para mantener consistencia con los márgenes del 5% */
+  max-width: 1280px;
+  padding: 20px 0;
+  display: flex;
+}
+
+.header__content {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__content {
+  justify-content: center;
+}
+
+/* Estilos básicos que podrían ser necesarios */
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Media queries para asegurar responsividad */
+@media (max-width: 768px) {
+  .header__content, .footer__content {
+    padding: 15px 0;
+  }
+}

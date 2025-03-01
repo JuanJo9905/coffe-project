@@ -1,0 +1,9 @@
+.main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.main__title {
+  margin-bottom: 30px;
+  text-align: center;
+}
