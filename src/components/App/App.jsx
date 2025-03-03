@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import './App.css';
 
 import Header from '../Header/Header';
@@ -11,21 +11,19 @@ function App() {
   console.log('App component rendered');
   
   return (
-    <HashRouter> 
-      <div className="app">
-        <Header />
-        
-        <main className="app__content">
-          <Routes>
-            <Route path="/" element={<Main />} />
-            <Route path="/coffees" element={<Coffees />} />
-            <Route path="/test" element={<div>Página de prueba</div>} />
-          </Routes>
-        </main>
-        
-        <Footer />
-      </div>
-    </HashRouter>
+    <div className="app">
+      <Header />
+      
+      <main className="app__content">
+        <Routes>
+          <Route path="/" element={<Main />} />
+          <Route path="/coffees" element={<Coffees />} />
+          <Route path="/test" element={<div>Página de prueba</div>} />
+        </Routes>
+      </main>
+      
+      <Footer />
+    </div>
   );
 }
 
