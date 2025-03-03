@@ -1,53 +1,92 @@
-/* src/components/App/App.css */
+@import url('../../utils/variables.css');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  color: var(--color-darkBlack);
+  background-color: var(--color-offWhite);
+}
+
 .app {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  font-family: Arial, sans-serif;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 .app__content {
   flex-grow: 1;
   display: flex;
   flex-direction: column;
-  align-items: center;
   width: 100%;
-  margin: 0 auto;
+  max-width: 100%;
   padding: 0;
+  margin: 0;
   box-sizing: border-box;
 }
 
-/* Estilos para Header y Footer que mantienen el ancho completo pero centran su contenido */
-.header, .footer {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  background-color: #f5f5f5;
+h1, h2, h3 {
+  color: var(--color-darkBrown);
+  font-weight: 700;
 }
 
-.header__content, .footer__content {
-  width: 90%; /* Para mantener consistencia con los márgenes del 5% */
-  max-width: 1280px;
-  padding: 20px 0;
-  display: flex;
+h4, h5, h6 {
+  color: var(--color-coffeeBrown);
+  font-weight: 600;
 }
 
-.header__content {
-  justify-content: space-between;
-  align-items: center;
+p, li, span {
+  color: var(--color-darkBlack);
 }
 
-.footer__content {
-  justify-content: center;
+a {
+  color: var(--color-coffeeBrown);
+  transition: color 0.3s ease;
 }
 
-/* Estilos básicos que podrían ser necesarios */
-h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
+a:hover {
+  color: var(--color-accentGreen);
 }
 
 button {
   cursor: pointer;
+  font-family: 'Poppins', Arial, sans-serif;
+}
+
+.primary-button {
+  background-color: var(--color-coffeeBrown);
+  color: var(--color-offWhite);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button:hover {
+  background-color: var(--color-darkBrown);
+}
+
+.secondary-button {
+  background-color: var(--color-beige);
+  color: var(--color-darkBrown);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.secondary-button:hover {
+  background-color: var(--color-lightTan);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 img {
@@ -55,9 +94,8 @@ img {
   height: auto;
 }
 
-/* Media queries para asegurar responsividad */
 @media (max-width: 768px) {
-  .header__content, .footer__content {
-    padding: 15px 0;
+  .app__content {
+    padding: 0;
   }
 }

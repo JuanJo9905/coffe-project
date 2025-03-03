@@ -1,10 +1,33 @@
+@import url('../../utils/variables.css');
+
 .footer {
-  padding: 20px;
-  background-color: #f5f5f5;
+  width: 100%;
+  background-color: var(--color-softBrown);
+  border-top: 1px solid var(--color-darkBrown);
+  padding: 0;
+  margin: 0;
+}
+
+.footer__content {
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
   text-align: center;
 }
 
 .footer__copyright {
   font-size: 14px;
-  color: #666;
+  color: var(--color-offWhite);
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .footer__content {
+    padding: 15px 0;
+  }
+  
+  .footer__copyright {
+    font-size: 12px;
+  }
 }

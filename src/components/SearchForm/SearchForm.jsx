@@ -1,4 +1,3 @@
-// src/components/SearchForm/SearchForm.jsx
 import React, { useState } from 'react';
 import './SearchForm.css';
 
@@ -7,14 +6,12 @@ function SearchForm({ onSearch }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // Pasamos el término tal cual, incluso si está vacío
-    // Esto permitirá mostrar todos los cafés cuando no hay texto de búsqueda
+ 
     onSearch(searchTerm);
   };
 
   const handleClear = () => {
     setSearchTerm('');
-    // Al limpiar, enviamos término vacío, lo que mostrará todos los cafés
     onSearch('');
   };
 

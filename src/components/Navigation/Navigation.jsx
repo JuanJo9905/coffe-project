@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Navigation.css';
 
 function Navigation() {
@@ -7,10 +7,24 @@ function Navigation() {
     <nav className="navigation">
       <ul className="navigation__list">
         <li className="navigation__item">
-          <Link to="/" className="navigation__link">Inicio</Link>
+          <NavLink 
+            to="/" 
+            className={({isActive}) => 
+              isActive ? 'navigation__link navigation__link--active' : 'navigation__link'
+            }
+          >
+            Inicio
+          </NavLink>
         </li>
         <li className="navigation__item">
-          <Link to="/coffees" className="navigation__link">Cafés</Link>
+          <NavLink 
+            to="/coffees" 
+            className={({isActive}) => 
+              isActive ? 'navigation__link navigation__link--active' : 'navigation__link'
+            }
+          >
+            Cafés
+          </NavLink>
         </li>
       </ul>
     </nav>

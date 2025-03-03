@@ -1,48 +1,62 @@
-// src/components/Coffees/Coffees.jsx
 import React, { useState, useEffect } from 'react';
 import CoffeeGrid from '../CoffeeGrid/CoffeeGrid';
 import Preloader from '../Preloader/Preloader';
 import SearchForm from '../SearchForm/SearchForm';
 import { getRandomCoffees, searchCoffees, getAllCoffees } from '../../utils/coffeeUtils';
+import { preloadCoffeeImages } from '../../utils/coffeeAPI';
 import './Coffees.css';
 
 function Coffees() {
-  // Estados para manejar los datos y la UI
   const [coffees, setCoffees] = useState([]);
   const [visibleCoffees, setVisibleCoffees] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
   const [errorMessage, setErrorMessage] = useState('');
   const [isSearchActive, setIsSearchActive] = useState(false);
   
-  // Cantidad de cafés a mostrar inicialmente y al hacer clic en "Mostrar más"
   const COFFEES_PER_PAGE = 3;
   
-  // Efecto para cargar cafés aleatorios al montar el componente
   useEffect(() => {
     try {
-      // Simulamos un tiempo de carga
       setTimeout(() => {
-        // Si no está en modo búsqueda, cargamos cafés aleatorios
         if (!isSearchActive) {
-          // Obtenemos cafés aleatorios
-          const randomCoffees = getRandomCoffees(9); // Obtener 9 cafés aleatorios
+          const randomCoffees = getRandomCoffees(9); 
           
           if (randomCoffees.length === 0) {
             setErrorMessage('No se encontraron cafés disponibles');
           } else {
             setCoffees(randomCoffees);
             setVisibleCoffees(randomCoffees.slice(0, COFFEES_PER_PAGE));
+            
+            
+            const seeds = randomCoffees.slice(0, COFFEES_PER_PAGE).map(coffee => 
+              coffee.seed || `coffee-${coffee.id}`
+            );
+            preloadCoffeeImages(seeds);
           }
         }
         
         setIsLoading(false);
-      }, 800); // Simulamos 800ms de carga
+      }, 800); 
     } catch (error) {
       console.error('Error al cargar los cafés:', error);
       setErrorMessage('Hubo un error al cargar los cafés. Por favor, intenta de nuevo más tarde.');
       setIsLoading(false);
     }
   }, [isSearchActive]);
+  
+  useEffect(() => {
+    if (visibleCoffees.length > 0) {
+      // Precargamos también las siguientes imágenes para mejorar la experiencia
+      const nextBatchIndex = visibleCoffees.length;
+      const nextCoffeesSeeds = coffees
+        .slice(nextBatchIndex, nextBatchIndex + COFFEES_PER_PAGE)
+        .map(coffee => coffee.seed || `coffee-${coffee.id}`);
+      
+      if (nextCoffeesSeeds.length > 0) {
+        preloadCoffeeImages(nextCoffeesSeeds);
+      }
+    }
+  }, [visibleCoffees, coffees]);
   
   // Función para mostrar más cafés
   const handleShowMore = () => {
@@ -71,7 +85,6 @@ function Coffees() {
       } else {
         setIsSearchActive(true);
         
-        // Simulamos un tiempo de respuesta
         setTimeout(() => {
           const searchResults = searchCoffees(searchTerm);
           
@@ -82,11 +95,16 @@ function Coffees() {
           } else {
             setCoffees(searchResults);
             setVisibleCoffees(searchResults.slice(0, COFFEES_PER_PAGE));
+            
+            const seeds = searchResults.slice(0, COFFEES_PER_PAGE).map(coffee => 
+              coffee.seed || `coffee-${coffee.id}`
+            );
+            preloadCoffeeImages(seeds);
           }
           
           setIsLoading(false);
         }, 500);
-        return; // Salimos para evitar establecer isLoading a false antes de tiempo
+        return; 
       }
       
       setIsLoading(false);
@@ -97,14 +115,11 @@ function Coffees() {
     }
   };
   
-  // Manejador para click en café
   const onCoffeeClick = (coffee) => {
     console.log('Café seleccionado:', coffee);
-    // Aquí podrías implementar un modal o navegación a detalles
     alert(`Has seleccionado: ${coffee.name} de ${coffee.origin}`);
   };
   
-  // Función para cargar todos los cafés
   const handleLoadAll = () => {
     setIsLoading(true);
     
@@ -112,6 +127,12 @@ function Coffees() {
       const allCoffees = getAllCoffees();
       setCoffees(allCoffees);
       setVisibleCoffees(allCoffees.slice(0, COFFEES_PER_PAGE));
+      
+      const seeds = allCoffees.slice(0, COFFEES_PER_PAGE).map(coffee => 
+        coffee.seed || `coffee-${coffee.id}`
+      );
+      preloadCoffeeImages(seeds);
+      
       setIsLoading(false);
     }, 500);
   };
@@ -121,7 +142,6 @@ function Coffees() {
     setIsLoading(true);
     setIsSearchActive(false);
     
-    // Permitimos que se recargue el useEffect
     setTimeout(() => {
       setIsLoading(false);
     }, 100);

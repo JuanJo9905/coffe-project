@@ -1,12 +1,44 @@
+@import url('../../utils/variables.css');
+
 .header {
+  width: 100%;
+  background-color: var(--color-softBrown);
+  box-shadow: var(--shadow-md);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 0;
+  margin: 0;
+}
+
+.header__content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #f5f5f5;
+  max-width: 1280px;
+  width: 90%;
+  margin: 0 auto;
+  padding: 15px 0;
 }
 
 .header__logo {
   font-size: 24px;
   font-weight: 700;
+  text-decoration: none;
+  color: var(--color-offWhite);
+  transition: opacity var(--transition-normal);
+}
+
+.header__logo:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 768px) {
+  .header__content {
+    padding: 10px 0;
+  }
+  
+  .header__logo {
+    font-size: 20px;
+  }
 }

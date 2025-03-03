@@ -1,98 +1,182 @@
 [
-    {
-      "id": 1,
-      "name": "Café Etíope Yirgacheffe",
-      "description": "Desde las altas montañas de Etiopía, este café tiene notas florales, cítricas y una acidez brillante. Perfecto para disfrutar como un pour-over que resalta sus matices delicados.",
-      "origin": "ETIOPÍA",
-      "image": "https://images.unsplash.com/photo-1511537190424-bbbab87ac5eb?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&h=400&q=80",
-      "createdAt": "2024-01-15T12:00:00.000Z"
-    },
-    {
-      "id": 2,
-      "name": "Café Colombiano Supremo",
-      "description": "Un café de cuerpo medio con excelente balance, notas de chocolate, nueces y un toque de caramelo. Cultivado en las alturas de los Andes colombianos por agricultores tradicionales.",
-      "origin": "COLOMBIA",
-      "image": "https://images.unsplash.com/photo-1559496417-e7f25cb247f3?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&h=400&q=80",
-      "createdAt": "2024-02-20T12:00:00.000Z"
-    },
-    {
-      "id": 3,
-      "name": "Blend Especial de la Casa",
-      "description": "Nuestra mezcla exclusiva combina granos de América Central y del Sur para crear un perfil equilibrado con dulzura natural, cuerpo medio y final suave con notas de chocolate.",
-      "origin": "BLEND",
-      "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&h=400&q=80",
-      "createdAt": "2024-03-05T12:00:00.000Z"
-    },
-    {
-      "id": 4,
-      "name": "Café de Sumatra",
-      "description": "Un café audaz y terroso de Indonesia con cuerpo completo, baja acidez y notas a hierbas, especias y tierra húmeda. Perfecto para métodos de inmersión como prensa francesa.",
-      "origin": "INDONESIA",
-      "image": "https://images.unsplash.com/photo-1497935586047-9242eb4fc795?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&h=400&q=80",
-      "createdAt": "2024-02-28T12:00:00.000Z"
-    },
-    {
-      "id": 5,
-      "name": "Café Keniano AA",
-      "description": "Un café africano vibrante con una brillante acidez cítrica, cuerpo completo y notas a frutas negras y bayas. La clasificación AA indica los granos más grandes y de mayor calidad.",
-      "origin": "KENIA",
-      "image": "https://images.unsplash.com/photo-1442512595331-e89e73853f31?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&h=400&q=80",
-      "createdAt": "2024-01-18T12:00:00.000Z"
-    },
-    {
-      "id": 6,
-      "name": "Café Guatemalteco Antigua",
-      "description": "De la región de Antigua, este café presenta un equilibrio perfecto entre acidez y cuerpo, con notas de chocolate, caramelo y un toque sutil de especias.",
-      "origin": "GUATEMALA",
-      "image": "https://images.unsplash.com/photo-1498804103079-a6351b050096?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&h=400&q=80",
-      "createdAt": "2024-01-25T12:00:00.000Z"
-    },
-    {
-      "id": 7,
-      "name": "Café de Costa Rica Tarrazu",
-      "description": "Cultivado en altitudes elevadas de la región Tarrazu, este café ofrece una acidez brillante, cuerpo completo y notas a frutas cítricas con un acabado dulce y limpio.",
-      "origin": "COSTA RICA",
-      "image": "https://images.unsplash.com/photo-1489533119213-66a5cd877091?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&h=400&q=80",
-      "createdAt": "2024-02-05T12:00:00.000Z"
-    },
-    {
-      "id": 8,
-      "name": "Café Brasileño Sul de Minas",
-      "description": "Un café suave y dulce con notas a nueces y chocolate, baja acidez y cuerpo medio. Ideal para espressos y cafés con leche por su perfil equilibrado y versátil.",
-      "origin": "BRASIL",
-      "image": "https://images.unsplash.com/photo-1509042239860-f550ce710b93?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&h=400&q=80",
-      "createdAt": "2024-01-30T12:00:00.000Z"
-    },
-    {
-      "id": 9,
-      "name": "Café Jamaicano Blue Mountain",
-      "description": "Uno de los cafés más exclusivos del mundo, con un perfil excepcionalmente equilibrado, suave dulzura, acidez moderada y sin amargor. Una experiencia verdaderamente premium.",
-      "origin": "JAMAICA",
-      "image": "https://images.unsplash.com/photo-1505312926838-645f295a20e1?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&h=400&q=80",
-      "createdAt": "2024-02-15T12:00:00.000Z"
-    },
-    {
-      "id": 10,
-      "name": "Café Vietnamita Robusta",
-      "description": "Un café intenso y potente con mayor contenido de cafeína, notas a madera, tierra y especias. Utilizado tradicionalmente en la preparación del café vietnamita con leche condensada.",
-      "origin": "VIETNAM",
-      "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&h=400&q=80",
-      "createdAt": "2024-02-10T12:00:00.000Z"
-    },
-    {
-      "id": 11,
-      "name": "Café Peruano Orgánico",
-      "description": "Cultivado en los Andes peruanos bajo estrictas prácticas orgánicas, este café ofrece notas a frutos secos, caramelo y cacao con un agradable cuerpo medio y acidez equilibrada.",
-      "origin": "PERÚ",
-      "image": "https://images.unsplash.com/photo-1544787219-7f47ccb76574?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&h=400&q=80",
-      "createdAt": "2024-03-01T12:00:00.000Z"
-    },
-    {
-      "id": 12,
-      "name": "Café Mexicano Chiapas",
-      "description": "De las montañas de Chiapas, este café de altura ofrece un perfil aromático con notas a nueces, vainilla y caramelo, acidez media y un cuerpo sedoso y agradable.",
-      "origin": "MÉXICO",
-      "image": "https://images.unsplash.com/photo-1500353391678-d7b57979d6e2?ixlib=rb-1.2.1&auto=format&fit=crop&w=640&h=400&q=80",
-      "createdAt": "2024-01-20T12:00:00.000Z"
-    }
-  ]
+  {
+    "id": 1,
+    "name": "Café Etíope Yirgacheffe",
+    "description": "Desde las altas montañas de Etiopía, este café tiene notas florales, cítricas y una acidez brillante. Perfecto para disfrutar como un pour-over que resalta sus matices delicados.",
+    "origin": "ETIOPÍA",
+    "createdAt": "2024-01-15T12:00:00.000Z",
+    "seed": "etiopia-yirgacheffe",
+    "intensity": 3,
+    "phrases": [
+      "Despierta tus sentidos con un aroma floral y cítrico.",
+      "Una experiencia equilibrada para los amantes del café de especialidad.",
+      "Ideal para comenzar el día con energía moderada.",
+      "Su origen en las montañas etíopes garantiza un sabor único y distintivo."
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Café Colombiano Supremo",
+    "description": "Un café de cuerpo medio con excelente balance, notas de chocolate, nueces y un toque de caramelo. Cultivado en las alturas de los Andes colombianos por agricultores tradicionales.",
+    "origin": "COLOMBIA",
+    "createdAt": "2024-02-20T12:00:00.000Z",
+    "seed": "colombia-supremo",
+    "intensity": 4,
+    "phrases": [
+      "Un sabor intenso que perdura en el paladar.",
+      "Perfecto para los que buscan un café con carácter y personalidad.",
+      "Su alta intensidad te mantendrá alerta durante horas.",
+      "Los Andes colombianos en cada sorbo intenso y aromático."
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Blend Especial de la Casa",
+    "description": "Nuestra mezcla exclusiva combina granos de América Central y del Sur para crear un perfil equilibrado con dulzura natural, cuerpo medio y final suave con notas de chocolate.",
+    "origin": "BLEND",
+    "createdAt": "2024-03-05T12:00:00.000Z",
+    "seed": "house-blend",
+    "intensity": 3,
+    "phrases": [
+      "Despierta tus sentidos con nuestro blend equilibrado.",
+      "Una experiencia equilibrada para cualquier momento del día.",
+      "Ideal para compartir en buena compañía.",
+      "Nuestra mezcla exclusiva te ofrece lo mejor de dos continentes."
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Café de Sumatra",
+    "description": "Un café audaz y terroso de Indonesia con cuerpo completo, baja acidez y notas a hierbas, especias y tierra húmeda. Perfecto para métodos de inmersión como prensa francesa.",
+    "origin": "INDONESIA",
+    "createdAt": "2024-02-28T12:00:00.000Z",
+    "seed": "sumatra-mandheling",
+    "intensity": 5,
+    "phrases": [
+      "Un impacto de sabor que desafía tus sentidos.",
+      "Para los verdaderos amantes del café intenso y sin concesiones.",
+      "Su altísima intensidad te catapultará a la productividad.",
+      "La joya de Indonesia, con una fuerza incomparable."
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Café Keniano AA",
+    "description": "Un café africano vibrante con una brillante acidez cítrica, cuerpo completo y notas a frutas negras y bayas. La clasificación AA indica los granos más grandes y de mayor calidad.",
+    "origin": "KENIA",
+    "createdAt": "2024-01-18T12:00:00.000Z",
+    "seed": "kenya-aa",
+    "intensity": 4,
+    "phrases": [
+      "Un sabor intenso que perdura en el paladar.",
+      "Perfecto para los que buscan un café con carácter y personalidad.",
+      "Su alta intensidad te mantendrá alerta durante horas.",
+      "Las tierras africanas en cada sorbo intenso y afrutado."
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Café Guatemalteco Antigua",
+    "description": "De la región de Antigua, este café presenta un equilibrio perfecto entre acidez y cuerpo, con notas de chocolate, caramelo y un toque sutil de especias.",
+    "origin": "GUATEMALA",
+    "createdAt": "2024-01-25T12:00:00.000Z",
+    "seed": "guatemala-antigua",
+    "intensity": 3,
+    "phrases": [
+      "Despierta tus sentidos con un aroma equilibrado y especiado.",
+      "Una experiencia equilibrada para los conocedores de café.",
+      "Ideal para disfrutar en las tardes mientras te relajas.",
+      "El legado de Antigua en cada sorbo de este café tradicional."
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Café de Costa Rica Tarrazu",
+    "description": "Cultivado en altitudes elevadas de la región Tarrazu, este café ofrece una acidez brillante, cuerpo completo y notas a frutas cítricas con un acabado dulce y limpio.",
+    "origin": "COSTA RICA",
+    "createdAt": "2024-02-05T12:00:00.000Z",
+    "seed": "costa-rica-tarrazu",
+    "intensity": 2,
+    "phrases": [
+      "Una caricia suave para tu paladar cada mañana.",
+      "La elección perfecta para quienes prefieren sabores delicados.",
+      "Suave intensidad que te acompaña sin sobreestimular.",
+      "Las montañas de Costa Rica en un café ligero y aromático."
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Café Brasileño Sul de Minas",
+    "description": "Un café suave y dulce con notas a nueces y chocolate, baja acidez y cuerpo medio. Ideal para espressos y cafés con leche por su perfil equilibrado y versátil.",
+    "origin": "BRASIL",
+    "createdAt": "2024-01-30T12:00:00.000Z",
+    "seed": "brazil-sul-minas",
+    "intensity": 2,
+    "phrases": [
+      "Una caricia suave para tu paladar cada mañana.",
+      "La elección perfecta para quienes prefieren sabores delicados.",
+      "Suave intensidad que te acompaña sin sobreestimular.",
+      "Los campos brasileños te ofrecen este café suave y reconfortante."
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Café Jamaicano Blue Mountain",
+    "description": "Uno de los cafés más exclusivos del mundo, con un perfil excepcionalmente equilibrado, suave dulzura, acidez moderada y sin amargor. Una experiencia verdaderamente premium.",
+    "origin": "JAMAICA",
+    "createdAt": "2024-02-15T12:00:00.000Z",
+    "seed": "jamaica-blue-mountain",
+    "intensity": 1,
+    "phrases": [
+      "La experiencia más suave y refinada para tu paladar.",
+      "El lujo de Jamaica en un café extraordinariamente delicado.",
+      "Mínima intensidad, máximo sabor y distinción.",
+      "Para los momentos en que mereces consentirte con algo realmente especial."
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Café Vietnamita Robusta",
+    "description": "Un café intenso y potente con mayor contenido de cafeína, notas a madera, tierra y especias. Utilizado tradicionalmente en la preparación del café vietnamita con leche condensada.",
+    "origin": "VIETNAM",
+    "createdAt": "2024-02-10T12:00:00.000Z",
+    "seed": "vietnam-robusta",
+    "intensity": 5,
+    "phrases": [
+      "Un impacto de sabor que desafía tus sentidos.",
+      "Para los verdaderos amantes del café intenso y sin concesiones.",
+      "Su altísima intensidad te catapultará a la productividad.",
+      "El café más potente del sudeste asiático, para los valientes."
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Café Peruano Orgánico",
+    "description": "Cultivado en los Andes peruanos bajo estrictas prácticas orgánicas, este café ofrece notas a frutos secos, caramelo y cacao con un agradable cuerpo medio y acidez equilibrada.",
+    "origin": "PERÚ",
+    "createdAt": "2024-03-01T12:00:00.000Z",
+    "seed": "peru-organic",
+    "intensity": 2,
+    "phrases": [
+      "Una caricia suave para tu paladar cada mañana.",
+      "La elección perfecta para quienes prefieren sabores delicados.",
+      "Suave intensidad que te acompaña sin sobreestimular.",
+      "Disfruta la pureza de los Andes peruanos en cada sorbo suave."
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Café Mexicano Chiapas",
+    "description": "De las montañas de Chiapas, este café de altura ofrece un perfil aromático con notas a nueces, vainilla y caramelo, acidez media y un cuerpo sedoso y agradable.",
+    "origin": "MÉXICO",
+    "createdAt": "2024-01-20T12:00:00.000Z",
+    "seed": "mexico-chiapas",
+    "intensity": 1,
+    "phrases": [
+      "La experiencia más suave y refinada para tu paladar.",
+      "El equilibrio perfecto para los amantes de sabores dulces y delicados.",
+      "Mínima intensidad, máximo sabor y aroma.",
+      "La tradición mexicana en un café extraordinariamente suave."
+    ]
+  }
+]

@@ -1,0 +1,45 @@
+:root {
+    /* Paleta de colores principal */
+    --color-beige: #C69C7A;
+    --color-coffeeBrown: #6C533F;
+    --color-darkBlack: #161715;
+    --color-softBrown: #6F5845;
+    --color-lightTan: #D7AC8A;
+  
+    /* Variaciones y colores auxiliares */
+    --color-offWhite: #F8F5F2;
+    --color-darkBrown: #402E1D;
+    --color-accentGreen: #3D6641;
+    
+    /* Colores funcionales */
+    --color-success: #4CAF50;
+    --color-error: #C9594B;
+    --color-warning: #E6A23C;
+    --color-info: #4A90A4;
+    
+    /* Espaciado */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+    --spacing-xxl: 48px;
+    
+    /* Radios de borde */
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+    --border-radius-lg: 12px;
+    --border-radius-xl: 16px;
+    --border-radius-round: 50%;
+    
+    /* Sombras */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.05);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+    --shadow-inset: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    
+    /* Transiciones */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+  }
