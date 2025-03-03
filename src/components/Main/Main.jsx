@@ -7,6 +7,7 @@ function Main() {
   const section1Ref = useRef(null);
   const section2Ref = useRef(null);
   const section3Ref = useRef(null);
+  const section4Ref = useRef(null);
   
   useEffect(() => {
     const isElementInViewport = (el) => {
@@ -25,6 +26,9 @@ function Main() {
       }
       if (section3Ref.current && isElementInViewport(section3Ref.current)) {
         section3Ref.current.classList.add('animate-in');
+      }
+      if (section4Ref.current && isElementInViewport(section4Ref.current)) {
+        section4Ref.current.classList.add('animate-in');
       }
     };
     
@@ -82,6 +86,22 @@ function Main() {
             <li>Fetch API</li>
             <li>localStorage</li>
           </ul>
+        </div>
+      </section>
+      
+      <section className="main__section animate-ready" ref={section4Ref}>
+        <h2 className="main__section-title">Agradecimientos Especiales</h2>
+        <div className="main__section-content">
+          <p>Esta aplicación utiliza imágenes proporcionadas por CoffeeAPI, un servicio web gratuito desarrollado por AlexFlipnote que ofrece imágenes aleatorias de café.</p>
+          <div className="main__credits">
+            <p>
+              <strong>CoffeeAPI:</strong> <a href="https://coffee.alexflipnote.dev/" target="_blank" rel="noopener noreferrer">https://coffee.alexflipnote.dev/</a>
+            </p>
+            <p>
+              <strong>Repositorio en GitHub:</strong> <a href="https://github.com/AlexFlipnote/CoffeeAPI" target="_blank" rel="noopener noreferrer">https://github.com/AlexFlipnote/CoffeeAPI</a>
+            </p>
+            <p className="main__credits-thanks">Nuestro más sincero agradecimiento por proporcionar este increíble recurso que ha permitido enriquecer visualmente nuestra aplicación.</p>
+          </div>
         </div>
       </section>
     </main>
