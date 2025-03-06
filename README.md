@@ -1,12 +1,9 @@
-# React + Vite
+Coffee App
+Este proyecto es una aplicación web desarrollada en React utilizando Vite como herramienta de construcción. La aplicación permite a los usuarios explorar diferentes tipos de café destacados alrededor del mundo, visualizarlos en tarjetas interactivas y realizar búsquedas.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Caracteristicas del proyecto
+Exploración de cafés: Visualización de diferentes variedades de café en tarjetas interactivas
+Búsqueda: Funcionalidad para buscar cafés por nombre, descripción u origen
+Diseño responsivo: Interfaz adaptable a diferentes tamaños de pantalla
+Efectos visuales: Animaciones y microinteracciones para mejorar la experiencia de usuario
+Carga progresiva: Sistema de "mostrar más" para cargar contenido adicional
