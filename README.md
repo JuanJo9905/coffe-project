@@ -1,4 +1,4 @@
-Coffee App
+Coffee App:
 Este proyecto es una aplicación web desarrollada en React utilizando Vite como herramienta de construcción. La aplicación permite a los usuarios explorar diferentes tipos de café destacados alrededor del mundo, visualizarlos en tarjetas interactivas y realizar búsquedas.
 
 Caracteristicas del proyecto
